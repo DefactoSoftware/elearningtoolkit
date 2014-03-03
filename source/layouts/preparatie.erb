@@ -9,8 +9,8 @@
         <div class="slide-header">
           <div class="title"><h1><%= current_page.data.title %></h1></div>
           <div class="slide-controls">
-            <a href="handleiding" class="previous">Vorige</a>
-            <a href="risicos" class="next">Volgende</a>
+            <%= link_to "Vorige", "/handleiding.html", class: "previous" %>
+            <%= link_to "Volgende", "/risicos.html", class: "next" %>
           </div>
         </div>
           <div class="slide-sub-header breadcrumbs">

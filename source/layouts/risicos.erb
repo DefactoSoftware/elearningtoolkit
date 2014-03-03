@@ -11,8 +11,8 @@
             <h1><%= current_page.data.title %></h1>
           </div>
           <div class="slide-controls">
-            <a href="preparatie" class="previous">Vorige</a>
-            <a href="na-gebruik" class="next">Volgende</a>
+            <%= link_to "Vorige", "/preparatie.html", class: "previous" %>
+            <%= link_to "Volgende", "/na-gebruik.html", class: "next" %>
           </div>
         </div>
         <div class="slide-sub-header breadcrumbs">

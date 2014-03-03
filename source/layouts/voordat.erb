@@ -11,8 +11,8 @@
             <h1><%= current_page.data.title %></h1>
           </div>
           <div class="slide-controls">
-            <a href="/" class="previous">Vorige</a>
-            <a href="handleiding" class="next">Volgende</a>
+            <%= link_to "Vorige", "/index.html", class: "previous" %>
+            <%= link_to "Volgende", "/handleiding.html", class: "next" %>
           </div>
         </div>
         <% if current_page.data.subtitle %>

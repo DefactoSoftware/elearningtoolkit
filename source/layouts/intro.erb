@@ -12,7 +12,8 @@
               <h2><%= current_page.data.title %></h2>
             </div>
             <div class="slide-controls">
-              <a href="voordat" class="submit">Beginnen</a></div>
+            <%= link_to "Beginnen", "/voordat.html", class: "submit" %>
+            </div>
           </div>
           <% if current_page.data.subtitle %>
             <div class="slide-sub-header">
