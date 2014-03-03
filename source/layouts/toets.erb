@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<%= partial "head" %>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <div class="slide">
+        <div class="slide-header">
+          <div class="title"><h1><%= current_page.data.title %></h1></div>
+          <div class="slide-controls">
+            <a href="na-gebruik" class="previous">Vorige</a>
+          </div>
+        </div>
+          <div class="slide-sub-header breadcrumbs">
+            <p>Handleiding >> Preparatie >> Gebruikersrisico's >> Na gebruik >> <span class="toets"><b>Toets</b><span>
+          </div>
+        <div class="slide-content">
+          <div class="row"> <%= yield %></div>
+
+        </div>
+
+
+    <p style="text-align: center; color: white;">dit is de toets layout</p>
+  </body>
+</html>

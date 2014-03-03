@@ -1,0 +1,39 @@
+.slide-header {
+  @include span-columns(12);
+  overflow: hidden;
+  background: lighten(#ccc7c0, 11);
+  border-radius: 6px 6px 0 0 ;
+  padding: 25px;
+  box-sizing: border-box;
+  border-bottom: 4px solid #ccc7c0;
+}
+
+.title {
+  float: left;
+  @include span-columns(6);
+  @include omega(2n);
+
+}
+
+.slide-controls {
+  float: right;
+}
+
+.next, .previous {
+  @extend %button;
+}
+.submit {
+  @include button(simple, $success-color);
+  color: #fff;
+  font-size: $base-font-size;
+  font-weight: bold;
+}
+
+.warning {
+  @include button(simple, $warning-color);
+  color: #fff;
+  font-size: $base-font-size;
+  font-weight: bold;
+  margin: 10px auto;
+  float: right;
+  }

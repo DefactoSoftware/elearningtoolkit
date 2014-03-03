@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<%= partial "head" %>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <div class="slide">
+        <div class="slide-header">
+          <div class="title"><h1><%= current_page.data.title %></h1></div>
+          <div class="slide-controls">
+            <a href="handleiding" class="previous">Vorige</a>
+            <a href="risicos" class="next">Volgende</a>
+          </div>
+        </div>
+          <div class="slide-sub-header breadcrumbs">
+            <p>Handleiding >> <b>Preparatie</b> >> Gebruikersrisico's >> Na gebruik >> <span class="toets">Toets<span>
+          </div>
+        <div class="slide-content">
+          <div class="row"></div>
+            <div class="column">
+              <h2><%= current_page.data.left_list_title %></h2>
+              <ul>
+                <% current_page.data.left_list.each do |f| %>
+                <li><%= f %></li>
+                <% end %>
+              </ul>
+            </div>
+            <div class="column">
+              <h2><%= current_page.data.right_list_title %></h2>
+              <ul>
+                <% current_page.data.left_list.each do |f| %>
+                <li><%= f %></li>
+                <% end %>
+              </ul>
+            </div>
+        </div>
+        <div class="center"><a href="#warning" class="warning" rel="modal:open"><%= yield %></a></div>
+
+      </div>
+
+    </div>
+    <p style="text-align: center; color: white;">dit is de preparatie layout</p>
+
+<div id="warning" class="modal">
+  <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
+  hard hoor
+</div>
+
+  </body>
+</html>

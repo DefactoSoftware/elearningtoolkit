@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<%= partial "head" %>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <div class="slide">
+        <div class="slide-header">
+          <div class="title">
+            <h1><%= current_page.data.title %></h1>
+          </div>
+          <div class="slide-controls">
+            <a href="risicos" class="previous">Vorige</a>
+            <a href="toets" class="next">Volgende</a>
+          </div>
+        </div>
+        <div class="slide-sub-header breadcrumbs">
+            <p>Handleiding >> Preparatie >> Gebruikersrisico's >> <b>Na gebruik</b> >> <span class="toets">Toets<span>
+          </div>
+        <div class="slide-content">
+          <div class="row"><%= yield %> </div>
+          <% current_page.data.item_list.each_with_index do |item, index| %>
+            <div class="row <%= 'alt' if index % 2 == 0 %>">
+              <div class="column3">
+                <h2><%= item.title %></h2>
+              </div>
+              <div class="column3">
+                <%= link_to "Bekijk de video", item.video %>
+              </div>
+              <div class="column3">
+                <%= link_to "Lees het document", item.doc %>
+              </div>
+            </div>
+          <% end %>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <p style="text-align: center; color: white;">dit is de preparatie layout</p>
+  </body>
+</html>

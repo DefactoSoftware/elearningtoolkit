@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<%= partial "head" %>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+      <div class="welcome">
+        <div class="slide">
+          <div class="slide-header">
+            <div class="title">
+              <h2><%= current_page.data.title %></h2>
+            </div>
+            <div class="slide-controls">
+              <a href="voordat" class="submit">Beginnen</a></div>
+          </div>
+          <% if current_page.data.subtitle %>
+            <div class="slide-sub-header">
+              <h2><%= current_page.data.subtitle %></h2>
+            </div>
+          <% end %>
+          <div class="slide-content">
+            <% if current_page.data.image %>
+              <%= image_tag current_page.data.image %>
+            <% end %>
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    <p style="text-align: center; color: white;">dit is de intro layout</p>
+  </body>
+</html>
