@@ -75,20 +75,21 @@ body {
     display: block;
     float: right;
     margin-left: 25px;
+      &.image {
+        float:none;
+      }
   }
+
   ul {
     @extend %default-ul;
   }
+
   ol {
     @extend %default-ol;
   }
-
-
-
 }
 
 .row {
-  @include span-columns(12);
   @include row(table);
 }
 
@@ -104,9 +105,7 @@ body {
 
 .column3 {
   @include span-columns(4);
-  @include reset-display;
   @include pad();
-  margin: 0;
   background: #ccc7c0;
    .alt & {
     background: $light-gray;
@@ -114,6 +113,6 @@ body {
 }
 
 .center {
-  @include span-columns(6);
-  @include shift(3);
+  @include span-columns(12);
+  text-align: center;
 }

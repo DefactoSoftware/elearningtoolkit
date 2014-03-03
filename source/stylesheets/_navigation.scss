@@ -35,10 +35,9 @@
   font-size: $base-font-size;
   font-weight: bold;
   margin: 10px auto;
-  float: right;
   }
 
-a.bla {
+a.active {
   text-decoration: underline;
   color: $success-color;
 }
