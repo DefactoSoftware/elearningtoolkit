@@ -16,8 +16,8 @@
           </div>
         </div>
         <div class="slide-sub-header breadcrumbs">
-            <p>Handleiding >> Preparatie >> Gebruikersrisico's >> <b>Na gebruik</b> >> <span class="toets">Toets<span>
-          </div>
+          <%= partial "breadcrumbs" %>
+        </div>
         <div class="slide-content">
           <div class="row"><%= yield %> </div>
           <% current_page.data.item_list.each_with_index do |item, index| %>

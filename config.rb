@@ -32,6 +32,14 @@
 # Helpers
 ###
 
+helpers do
+  def nav_path(link_text, url, options = {})
+    options[:class] ||= ""
+    options[:class] << "bla" if url == current_page.url
+    link_to(link_text, url, options)
+  end
+end
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
@@ -55,7 +63,7 @@ activate :livereload, :host => "127.0.0.1"
 
 activate :bourbon
 
-activate :directory_indexes
+#activate :directory_indexes
 
 
 # Build-specific configuration

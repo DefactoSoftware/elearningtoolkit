@@ -16,8 +16,8 @@
           </div>
         </div>
         <div class="slide-sub-header breadcrumbs">
-            <p>Handleiding >> Preparatie >> <b>Gebruikersrisico's</b> >> Na gebruik >> <span class="toets">Toets<span>
-          </div>
+          <%= partial "breadcrumbs" %>
+        </div>
         <div class="slide-content">
           <% current_page.data.video_list.each_with_index do |video, index| %>
             <div class="row <%= 'alt' if index % 2 == 0 %>">
