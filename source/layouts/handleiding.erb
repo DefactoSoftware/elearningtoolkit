@@ -24,6 +24,9 @@
             <div class="column">
                 <% if current_page.data.video %>
                   <%= current_page.data.video_title %>
+                  <video width="100%" controls>
+                    <source src="/images/<%= current_page.data.video %>" type="video/mp4">
+                  </video>
                 <% end %>
             </div>
             <div class="column">
