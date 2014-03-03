@@ -1,0 +1,613 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/extends/_button.scss */
+button,
+input[type="submit"], .next, .previous {
+  border: 1px solid #2459a6;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #89a8d5;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #477dca;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #477dca), color-stop(100%, #2760b2));
+  background-image: -webkit-linear-gradient(#477dca, #2760b2);
+  background-image: linear-gradient(#477dca, #2760b2);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #1b4f9a;
+  background-clip: padding-box;
+  font-size: 0.9em; }
+  /* line 79, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  button:hover:not(:disabled),
+  input[type="submit"]:hover:not(:disabled), .next:hover:not(:disabled), .previous:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #628cc8;
+    cursor: pointer;
+    background-color: #3c71bb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c71bb), color-stop(100%, #255aa5));
+    background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
+    background-image: linear-gradient(#3c71bb, #255aa5); }
+  /* line 95, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  button:active:not(:disabled),
+  input[type="submit"]:active:not(:disabled), .next:active:not(:disabled), .previous:active:not(:disabled) {
+    border: 1px solid #2459a6;
+    box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eeeeee; }
+  /* line 38, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled, .next:disabled, .previous:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+body {
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.44em; }
+
+/* line 9, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 16, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h1 {
+  font-size: 2.35613em; }
+
+/* line 20, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h2 {
+  font-size: 1.4562em; }
+
+/* line 24, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h3 {
+  font-size: 0.9em; }
+
+/* line 28, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h4 {
+  font-size: 0.55624em; }
+
+/* line 32, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h5 {
+  font-size: 0.34378em; }
+
+/* line 36, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+h6 {
+  font-size: 0.9em; }
+
+/* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+p {
+  margin: 0 0 0.72em; }
+
+/* line 44, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+a {
+  color: #477dca;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  /* line 49, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 53, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 59, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.44em 0; }
+
+/* line 67, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 72, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #dddddd;
+  cursor: help; }
+
+/* line 77, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+address {
+  display: block;
+  margin: 0 0 0.72em; }
+
+/* line 82, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+hgroup {
+  margin-bottom: 0.72em; }
+
+/* line 86, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+del {
+  color: #595959; }
+
+/* line 90, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.44em 0;
+  padding-left: 0.72em; }
+
+/* line 97, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 101, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 10, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.72em 0;
+  padding: 1.44em; }
+
+/* line 19, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em; }
+
+/* line 25, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.36em; }
+  /* line 29, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 33, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 39, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.9em;
+  margin-bottom: 0.72em;
+  padding: 0.48em 0.48em;
+  resize: vertical;
+  width: 100%; }
+  /* line 53, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
+    border-color: #c4c4c4; }
+  /* line 57, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 64, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 68, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.36em; }
+
+/* line 73, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+input[type="file"] {
+  width: 100%; }
+
+/* line 77, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+select {
+  width: auto;
+  margin-bottom: 1.44em; }
+
+/* line 83, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_forms.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.72em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.72em 0;
+  text-align: left; }
+
+/* line 15, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.72em 0; }
+
+/* line 20, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  /* line 6, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+  .modal ul, .slide-content ul {
+    list-style-type: disc;
+    margin-bottom: 0.72em;
+    padding-left: 1.44em; }
+  /* line 12, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+  .modal ol, .slide-content ol {
+    list-style-type: decimal;
+    margin-bottom: 0.72em;
+    padding-left: 1.44em; }
+
+/* line 19, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+dl {
+  line-height: 1.44em;
+  margin-bottom: 0.72em; }
+  /* line 23, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.72em; }
+  /* line 28, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_flashes.scss */
+.error, #flash_failure {
+  background: #fbe3e4;
+  color: #96151b;
+  font-weight: bold;
+  margin-bottom: 0.72em;
+  padding: 0.72em; }
+  /* line 8, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+  .error a, #flash_failure a {
+    color: #6a0f13; }
+    /* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+    .error a:hover, #flash_failure a:hover {
+      color: #110203; }
+
+/* line 5, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_flashes.scss */
+.notice, #flash_notice {
+  background: #fff6bf;
+  color: #8c7800;
+  font-weight: bold;
+  margin-bottom: 0.72em;
+  padding: 0.72em; }
+  /* line 8, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+  .notice a, #flash_notice a {
+    color: #594c00; }
+    /* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+    .notice a:hover, #flash_notice a:hover {
+      color: black; }
+
+/* line 9, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/_flashes.scss */
+.success, #flash_success {
+  background: #5cb85c;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0.72em;
+  padding: 0.72em; }
+  /* line 8, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+  .success a, #flash_success a {
+    color: black; }
+    /* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/bitters/mixins/_flash.scss */
+    .success a:hover, #flash_success a:hover {
+      color: black; }
+
+/* line 2, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 1, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+.slide-header {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  overflow: hidden;
+  background: #e5e3df;
+  border-radius: 6px 6px 0 0;
+  padding: 25px;
+  box-sizing: border-box;
+  border-bottom: 4px solid #ccc7c0; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .slide-header:last-child {
+    margin-right: 0; }
+
+/* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+.title {
+  float: left;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .title:last-child {
+    margin-right: 0; }
+  /* line 70, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_omega.scss */
+  .title:nth-child(2n) {
+    margin-right: 0; }
+  /* line 75, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_omega.scss */
+  .title:nth-child(2n+1) {
+    clear: left; }
+
+/* line 18, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+.slide-controls {
+  float: right; }
+
+/* line 25, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+.submit {
+  border: 1px solid #359835;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #98c998;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #5cb85c;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5cb85c), color-stop(100%, #39a339));
+  background-image: -webkit-linear-gradient(#5cb85c, #39a339);
+  background-image: linear-gradient(#5cb85c, #39a339);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #2a8e2a;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold; }
+  /* line 79, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .submit:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #75b875;
+    cursor: pointer;
+    background-color: #51a951;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #51a951), color-stop(100%, #369736));
+    background-image: -webkit-linear-gradient(#51a951, #369736);
+    background-image: linear-gradient(#51a951, #369736); }
+  /* line 95, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .submit:active:not(:disabled) {
+    border: 1px solid #359835;
+    box-shadow: inset 0 0 8px 4px #338a33, inset 0 0 8px 4px #338a33, 0 1px 1px 0 #eeeeee; }
+  /* line 38, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+/* line 32, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+.warning {
+  border: 1px solid #c3231e;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #e19693;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #d9534f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9534f), color-stop(100%, #d02520));
+  background-image: -webkit-linear-gradient(#d9534f, #d02520);
+  background-image: linear-gradient(#d9534f, #d02520);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #b71a15;
+  background-clip: padding-box;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 10px auto; }
+  /* line 79, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .warning:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #d76e6b;
+    cursor: pointer;
+    background-color: #d0433f;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d0433f), color-stop(100%, #c2241f));
+    background-image: -webkit-linear-gradient(#d0433f, #c2241f);
+    background-image: linear-gradient(#d0433f, #c2241f); }
+  /* line 95, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .warning:active:not(:disabled) {
+    border: 1px solid #c3231e;
+    box-shadow: inset 0 0 8px 4px #b3221e, inset 0 0 8px 4px #b3221e, 0 1px 1px 0 #eeeeee; }
+  /* line 38, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_button.scss */
+  .warning:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
+
+/* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/_navigation.scss */
+a.active {
+  text-decoration: underline;
+  color: #5cb85c; }
+
+/* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url("/images/bg.jpg");
+  background-size: cover; }
+
+/* line 17, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.welcome {
+  -webkit-animation-name: welcome;
+  -webkit-animation-duration: 1s; }
+
+@-webkit-keyframes welcome {
+  /* line 22, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 26, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  50% {
+    -webkit-transform: scale(0);
+    opacity: 0; }
+
+  /* line 30, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1; }
+
+  /* line 35, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  to {
+    -webkit-transform: scale(1); } }
+
+/* line 39, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.container {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .container:after {
+    clear: both; }
+
+/* line 43, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.slide {
+  background: #f7f6f0;
+  margin: 5% auto;
+  border-radius: 6px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  min-height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 8px;
+  position: relative; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .slide:last-child {
+    margin-right: 0; }
+
+/* line 53, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.slide-sub-header {
+  padding: 25px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background: #fad096; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .slide-sub-header:last-child {
+    margin-right: 0; }
+
+/* line 60, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.breadcrumbs .toets {
+  color: #1a1a1a; }
+
+/* line 65, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.slide-content {
+  padding: 25px;
+  overflow: scroll;
+  max-height: 400px;
+  display: inline-block;
+  position: relative;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  *zoom: 1;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .slide-content:last-child {
+    margin-right: 0; }
+  /* line 18, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .slide-content:before, .slide-content:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .slide-content:after {
+    clear: both; }
+  /* line 74, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  .slide-content img {
+    display: block;
+    float: right;
+    margin-left: 25px; }
+    /* line 78, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+    .slide-content img.image {
+      float: none; }
+
+/* line 92, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.row {
+  *zoom: 1;
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  /* line 18, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/Hugo/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/bourbon-3.1.8/app/assets/stylesheets/addons/_clearfix.scss */
+  .row:after {
+    clear: both; }
+
+/* line 96, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.column {
+  display: table-cell;
+  padding-right: 1.96471%;
+  width: 50.78588%;
+  padding: 2.35765%;
+  background: #ccc7c0; }
+  /* line 101, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  .alt .column {
+    background: #dddddd; }
+
+/* line 106, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.column3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding: 2.35765%;
+  background: #ccc7c0; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .column3:last-child {
+    margin-right: 0; }
+  /* line 110, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+  .alt .column3 {
+    background: #dddddd; }
+
+/* line 115, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
+.center {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center; }
+  /* line 40, /Users/Hugo/git/spuitenpomp/source/stylesheets/neat/grid/_span-columns.scss */
+  .center:last-child {
+    margin-right: 0; }
