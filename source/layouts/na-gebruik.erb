@@ -19,9 +19,9 @@
           <%= partial "breadcrumbs" %>
         </div>
         <div class="slide-content">
-          <div class="row"><%= yield %> </div>
+          <%= yield %>
           <% current_page.data.item_list.each_with_index do |item, index| %>
-            <div class="row <%= 'alt' if index % 2 == 0 %>">
+            <div class="row <%= 'alt' if index % 2 != 0 %>">
               <div class="column3">
                 <h2><%= item.title %></h2>
               </div>
