@@ -21,15 +21,17 @@
         <div class="slide-content">
           <%= yield %>
           <div class="row">
-            <div class="left">
+            <div class="column">
                 <% if current_page.data.video %>
                   <%= current_page.data.video_title %>
                 <% end %>
             </div>
-            <div class="right">
+            <div class="column">
                 <% if current_page.data.image %>
-                    <%= image_tag current_page.data.image %>
+                    <p>
                     <%= current_page.data.image_title %>
+                    </p>
+                    <%= image_tag current_page.data.image, class: "image" %>
                 <% end %>
             </div>
           </div>
