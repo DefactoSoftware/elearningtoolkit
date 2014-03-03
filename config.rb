@@ -35,7 +35,7 @@
 helpers do
   def nav_path(link_text, url, options = {})
     options[:class] ||= ""
-    options[:class] << "bla" if url == current_page.url
+    options[:class] << "active" if url == current_page.url
     link_to(link_text, url, options)
   end
 end
