@@ -23,15 +23,22 @@
           <% current_page.data.item_list.each_with_index do |item, index| %>
             <div class="row <%= 'alt' if index % 2 != 0 %>">
               <div class="column3">
-                <h2><%= item.title %></h2>
+                <%= item.title %>
               </div>
               <div class="column3">
-                <%= link_to "Bekijk de video", item.video %>
+                <%= link_to "Bekijk de video", "#video#{index}", rel: "modal:open" %>
               </div>
               <div class="column3">
-                <%= link_to "Lees het document", item.doc %>
+                <%= link_to "Lees het document", "#document#{index}", rel: "modal:open" %>
               </div>
             </div>
+              <div class="modal" id="video<%= index %>">
+                hier komt een video over <%= item.title %>
+              </div>
+              <div class="modal" id="document<%= index %>">
+                hier een document of markdown over <%= item.title %>
+              </div>
+
           <% end %>
 
           </div>
