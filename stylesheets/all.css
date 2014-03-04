@@ -452,7 +452,7 @@ a.active {
 /* line 11, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
 body {
   font-family: 'Open Sans', sans-serif;
-  background: url("/images/bg.jpg");
+  background: url("../images/bg.jpg");
   background-size: cover; }
 
 /* line 17, /Users/Hugo/git/spuitenpomp/source/stylesheets/all.scss */
