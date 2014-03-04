@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: url('/images/bg.jpg');
+  background: url('../images/bg.jpg');
   background-size: cover;
 }
 
@@ -48,28 +48,18 @@ body {
   min-height: 500px;
   box-shadow: rgba(0,0,0,.1) 0 1px 8px;
   position: relative;
-}
-
-.slide-sub-header {
-  padding: 25px;
-  @include span-columns(12);
-  background: #fad096;
-}
-
-.breadcrumbs {
-  .toets {
-    color: darken($base-font-color, 10);
+  .toets & {
+  background: $light-yellow;
   }
 }
 
-.slide-content, {
+.slide-content {
   padding: 25px;
   overflow: scroll;
   max-height: 400px;
   display: inline-block;
   position: relative;
   @include span-columns(12 of 12);
-  @include row(table);
 
   img {
     display: block;
@@ -87,6 +77,11 @@ body {
   ol {
     @extend %default-ol;
   }
+}
+
+.table-row {
+  @include span-columns(12);
+  @include row(table);
 }
 
 .row {

@@ -17,7 +17,7 @@
             <%= partial "breadcrumbs" %>
           </div>
         <div class="slide-content">
-          <div class="row"></div>
+          <div class="table-row">
             <div class="column">
               <h2><%= current_page.data.left_list_title %></h2>
               <ul>
@@ -34,6 +34,7 @@
                 <% end %>
               </ul>
             </div>
+          </div>
         </div>
         <div class="center"><a href="#warning" class="warning" rel="modal:open"><%= current_page.data.warning_button %></a></div>
 
@@ -42,7 +43,7 @@
     </div>
     <p style="text-align: center; color: white;">dit is de preparatie layout</p>
 
-<div id="warning" class="modal modaal">
+<div id="warning" class="modal">
   <a href="#close-modal" rel="modal:close" class="close-modal ">Close</a>
   <%= yield %>
 </div>

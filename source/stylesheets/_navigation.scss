@@ -22,6 +22,7 @@
 .next, .previous {
   @extend %button;
 }
+
 .submit {
   @include button(simple, $success-color);
   color: #fff;
@@ -40,4 +41,16 @@
 a.active {
   text-decoration: underline;
   color: $success-color;
+}
+
+.slide-sub-header {
+  padding: 25px;
+  @include span-columns(12);
+  background: #fad096;
+}
+
+.breadcrumbs {
+  .toets {
+    color: darken($base-font-color, 10);
+  }
 }
