@@ -49,7 +49,7 @@ N.b. I am abusing the s*** out of Middleman's [YAML](http://en.wikipedia.org/wik
 ## Deploying
 This prototype is configured to deploy to Github pages through the gh-pages branch of this repository. 
 This can be conveniently used as staging / demo environment. 
-Run the following to deploy to [http://defactosoftware.github.io/elearningtoolkit/
+Run the following to deploy to http://defactosoftware.github.io/elearningtoolkit/
 
 ```
 $ middleman build 
