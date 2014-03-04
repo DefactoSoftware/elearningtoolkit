@@ -1,0 +1,7 @@
+$sm-size: 480px;
+$md-size: 768px;
+$lg-size: 929px;
+
+$sm-breakpoint: new-breakpoint(max-width $sm-size);
+$md-breakpoint: new-breakpoint(max-width $md-size);
+$lg-breakpoint: new-breakpoint(max-width $lg-size);

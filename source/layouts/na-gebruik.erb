@@ -21,7 +21,7 @@
         <div class="slide-content">
           <%= yield %>
           <% current_page.data.item_list.each_with_index do |item, index| %>
-            <div class="row <%= 'alt' if index % 2 != 0 %>">
+            <div class="table-row <%= 'alt' if index % 2 != 0 %>">
               <div class="column3">
                 <%= item.title %>
               </div>
@@ -36,7 +36,7 @@
                 hier komt een video over <%= item.title %>
               </div>
               <div class="modal" id="document<%= index %>">
-                hier een document of markdown over <%= item.title %>
+                hier een document of markdown over  <%= item.title %>
               </div>
 
           <% end %>

@@ -3,10 +3,11 @@
 @import "compass/css3/images";
 @import "bourbon";
 @import "bitters/bitters";
+$visual-grid: true;
 @import "neat/neat";
+@import "neat/neat-helpers";
 @import "navigation";
 @import "modal";
-
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -82,16 +83,22 @@ body {
 .table-row {
   @include span-columns(12);
   @include row(table);
+  @include media($md-breakpoint) {
+    @include span-columns(12);
+  }
 }
 
 .row {
-  @include row(table);
+  @include span-columns(12);
 }
 
 .column {
-  @include span-columns(6);
+  @include span-columns(6 of 12);
   @include reset-display;
   @include pad();
+  @include media($md-breakpoint) {
+    @include span-columns(12);
+  }
   background: #ccc7c0;
    .alt & {
     background: $light-gray;
@@ -99,7 +106,7 @@ body {
 }
 
 .column3 {
-  @include span-columns(4);
+  @include span-columns(4 of 12);
   @include pad();
   background: #ccc7c0;
    .alt & {
