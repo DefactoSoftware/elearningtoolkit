@@ -11,3 +11,6 @@ gem "middleman-bourbon"
 
 # Deploy to GitHub Pages
 gem "middleman-deploy"
+
+#scorm packaging
+gem "scorm", "~> 1.0.2"

@@ -85,7 +85,10 @@ GEM
       ffi (>= 0.5.0)
     rb-kqueue (0.2.2)
       ffi (>= 0.5.0)
+    rubyzip (0.9.9)
     sass (3.2.14)
+    scorm (1.0.2)
+      rubyzip (~> 0.9.4)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -110,3 +113,4 @@ DEPENDENCIES
   middleman-bourbon
   middleman-deploy
   middleman-livereload (~> 3.1.0)
+  scorm (~> 1.0.2)
