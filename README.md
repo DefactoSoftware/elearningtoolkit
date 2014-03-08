@@ -42,7 +42,7 @@ N.b. I am abusing the s*** out of Middleman's [YAML](http://en.wikipedia.org/wik
 ## Getting it to work 
 1. clone this repository (`git clone git@github.com:DefactoSoftware/elearningtoolkit.git`)
 2. run `bundle install`
-3. run `middleman start`
+3. run `middleman server`
 4. go to localhost:4567
 5. ask me why it's not working
 

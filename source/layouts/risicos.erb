@@ -20,7 +20,7 @@
         </div>
         <div class="slide-content">
           <% current_page.data.video_list.each_with_index do |video, index| %>
-            <div class="row <%= 'alt' if index % 2 != 0 %>">
+            <div class="table-row <%= 'alt' if index % 2 != 0 %>">
               <div class="column">
                 <h2><%= video.title %></h2>
                 <p>

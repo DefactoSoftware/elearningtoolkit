@@ -4,19 +4,22 @@
   background: lighten(#ccc7c0, 11);
   border-radius: 6px 6px 0 0 ;
   padding: 25px;
-  box-sizing: border-box;
   border-bottom: 4px solid #ccc7c0;
 }
 
 .title {
-  float: left;
-  @include span-columns(6);
-  @include omega(2n);
-
+  @include span-columns(8 of 12);
 }
 
 .slide-controls {
-  float: right;
+  @include span-columns(4 of 12);
+  text-align: right;
+  @include media($md-breakpoint) {
+    @include span-columns(12);
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
 }
 
 .next, .previous {
