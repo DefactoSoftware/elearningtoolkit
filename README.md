@@ -16,7 +16,7 @@ Some of the apparent advantages will hopefully be:
 * Online collaboration (pull-request workflow, line comments, issue tracking, branches, milestones, releases).
 
 What we are not (yet) doing: 
-* SCORM support, probably never gonna happen.
+* SCORM support, ~~probably never gonna happen.~~ _edit: oops, it happened again_
 * Providing a simple client-side multiple choice quiz option, worth lookin into :)
 * ...suggestions?
 
@@ -30,11 +30,15 @@ What we are not (yet) doing:
 * Rubygems
 * Bundler (`gem install bundler`)
 * [Middleman](middlemanapp.com)
+ 
+### Open Source libraries used
+* [Middleman Deploy GEM](https://github.com/tvaughan/middleman-deploy) to deploy, currently to Github Pages
 * [Bourbon](http://bourbon.io/)
 * [Bitters](https://github.com/thoughtbot/bitters)
 * [Neat](http://neat.bourbon.io/)
 * https://github.com/kylefox/jquery-modal 
-* https://github.com/tvaughan/middleman-deploy
+* This [SCORM GEM](https://github.com/mindset/scorm) to generate and budnle the necessary SCORM stuff. 
+* The [Pipwerks SCORM Api wrapper is included in the project](https://github.com/pipwerks/scorm-api-wrapper/)
 
 I'm actually not a 100% sure if compass is still playing a significant role in all this, but it comes with Middleman, so...
 N.b. I am abusing the s*** out of Middleman's [YAML](http://en.wikipedia.org/wiki/YAML) [Frontmatter](http://middlemanapp.com/basics/frontmatter/). 
@@ -62,4 +66,10 @@ In /source you will find a bunch of .markdown.erb files. These files contain the
 partially in markdown and partially in YAML frontmatter. You can edit these to see what happens (but create a new branch when pushing to origin).
 Images and videos are found in source/images, placing files there and referring to them in the frontmatter does the trick. But only if that specific lay-out uses images of course :)
 
+## SCORM support: 
+1. Build your project using `middleman build`.
+2. Use `scorm create build` to generate the necessary SCORM files.
+3. Go to `/build` and add all resources to `imsmanifest.xml` (see `sample.imsmanifest.xml` for what you should include and syntax)
+4. run `scorm bundle` in the build folder.
+5. locate `build.zip` in your build folder, there you go.
 
