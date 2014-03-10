@@ -25,13 +25,13 @@
           //Let's get the completion status to see if the course has already been completed
           var completionstatus = scorm.get("cmi.core.lesson_status");
 
-          //If the course has already been completed...
+          /* If the course has already been completed...
           if(completionstatus === "completed" || completionstatus === "passed"){
 
-             //...let's display a message and close the browser window
-             handleError("You have already completed this course. You do not need to continue.");
+             //...let's display a message and close the browser window.
+             handleError("U heeft deze module al voltooid.");
 
-          }
+          } */
 
           //Now let's get the username from the LMS
           var learnername = scorm.get("cmi.core.student_name");
@@ -61,8 +61,7 @@
        if(lmsConnected){
 
           //... try setting the course status to "completed"
-          var success = scorm.set("cmi.core.lesson_status", "completed");
-
+          var success = scorm.set("cmi.core.lesson_status", "completed") && scorm.set ("cmi.score.raw", "100");
           //If the course was successfully set to "completed"...
           if(success){
 
@@ -92,7 +91,7 @@
 
       document.getElementById("myform").onsubmit = function (){
 
-        this.innerHTML = "Thank you, your selection has been recorded. You may close this window.";
+        this.innerHTML = "Bedankt voor het volgen van deze module. U kunt dit venster nu sluiten.";
 
         setComplete();
 
